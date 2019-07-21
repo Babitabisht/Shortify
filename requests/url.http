@@ -1,0 +1,7 @@
+POST http://localhost:3000/api/url/shorten
+
+Content-Type: application/json
+
+{
+    "longURL" : "https://www.amazon.in/b/ref=hero-acad-ur?node=4149781031&pf_rd_p=05e9cf2e-7b5d-49a0-a7d4-a5278fc30bd9&pf_rd_r=KM8TZQMT4KBEJEJJ3HVR"
+}
