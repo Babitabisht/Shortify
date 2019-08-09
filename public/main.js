@@ -345,12 +345,17 @@ var MainComponent = /** @class */ (function () {
         this.shortURL = '';
         this.err = '';
         if (this.val == null || this.val == undefined) {
-            console.log('add something');
+            //  console.log('add something');
         }
         else {
-            console.log('in else');
+            // console.log('in else');
             this.shortify.shortifytheURL(this.val).subscribe(function (data) {
-                console.log('-------------This is the response---', data, typeof data, data.shortURL);
+                // console.log(
+                //   '-------------This is the response---',
+                //   data,
+                //   typeof data,
+                //   data.shortURL
+                // );
                 if (data == 422) {
                     _this.err = 'Incorrect URL';
                 }
