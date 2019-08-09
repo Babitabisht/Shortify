@@ -1,2 +1,3 @@
 /node_modules
-/public/shortify/node_modules
+/Frontend/shortifyFrontend/node_modules
+/config/default.json

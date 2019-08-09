@@ -1,0 +1,51 @@
+<div class="jumbotron">
+  <h1 class="display-4">Shortify the URL !</h1>
+  <p class="lead">
+    Get simple short links and get rid of those long annoying urls. Shortify the
+    url with the help of Shortify
+  </p>
+  <hr class="my-4" />
+
+  <div>
+    <div id="namer">
+      <div id="namer-input">
+        <input
+          type="text"
+          name="namername"
+          placeholder="Enter the URL"
+          [(ngModel)]="val"
+        />
+      </div>
+    </div>
+    <div class="text-center">
+      <button
+        class="btn  btn-outline-primary btn-sm p-4  my-3"
+        (click)="getShortLink()"
+      >
+        Shortify
+      </button>
+    </div>
+
+    <div>
+      <input
+        type="text"
+        name="shortUrl"
+        id=""
+        value="{{ shortURL }}"
+        readonly
+        #userinput
+      />
+      &nbsp;
+      <i
+        class="fas fa-copy"
+        style="color: seagreen"
+        (click)="copyInputMessage(userinput)"
+        value="click to copy"
+      >
+      </i>
+    </div>
+    <div>
+      <h2>{{ err }}</h2>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,4 @@
 {
-  "mongoURI": "mongodb://localhost:27017/URLshortner",
+  "mongoURI": "mongodb://babitabisht:shortify2019@ds059654.mlab.com:59654/shortify",
   "baseURL": "http://localhost:3000"
 }

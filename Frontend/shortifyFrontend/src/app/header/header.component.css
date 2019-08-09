@@ -1,0 +1,9 @@
+.mat-icon {
+  vertical-align: right;
+}
+
+.align-right {
+  float: right;
+  margin-left: auto;
+  margin-right: 0;
+}
