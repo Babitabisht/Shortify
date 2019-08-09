@@ -20,11 +20,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', require('./routes/index'));
 app.use('/api/url', require('./routes/url'));
 
-app.get('/', function(req, res) {
-  console.log('hii');
-  res.send('hello !');
-});
-
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   // console.log('running on ort 3000');
