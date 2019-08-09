@@ -457,7 +457,7 @@ var ShortifyServiceService = /** @class */ (function () {
         this.http = http;
     }
     ShortifyServiceService.prototype.shortifytheURL = function (url) {
-        var URL = '/api/url/shorten';
+        var URL = 'api/url/shorten';
         var body = { longURL: url };
         return this.http.post(URL, body);
     };

@@ -7,7 +7,7 @@ export class ShortifyServiceService {
   constructor(private http: HttpClient) {}
 
   shortifytheURL(url: string) {
-    let URL = '/api/url/shorten';
+    let URL = 'api/url/shorten';
     let body = { longURL: url };
     return this.http.post(URL, body);
   }
