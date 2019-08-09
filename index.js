@@ -25,7 +25,7 @@ app.get('/', function(req, res) {
   res.send('hello !');
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   // console.log('running on ort 3000');
 });
