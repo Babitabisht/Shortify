@@ -20,6 +20,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', require('./routes/index'));
 app.use('/api/url', require('./routes/url'));
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/index.html'));
+});
+
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   // console.log('running on ort 3000');
